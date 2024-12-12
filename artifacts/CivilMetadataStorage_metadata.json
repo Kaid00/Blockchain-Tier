@@ -1,0 +1,187 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "documentId",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "ipfsHash",
+						"type": "string"
+					}
+				],
+				"name": "DocumentStored",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "documents",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "ipfsHash",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "encryptedMetadata",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_documentId",
+						"type": "string"
+					}
+				],
+				"name": "getDocument",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_documentId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_ipfsHash",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_encryptedMetadata",
+						"type": "string"
+					}
+				],
+				"name": "storeDocument",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string[]",
+						"name": "_documentIds",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "_ipfsHashes",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "_encryptedMetadataArray",
+						"type": "string[]"
+					}
+				],
+				"name": "storeMultipleDocuments",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_documentIdPrefix",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_ipfsHash",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_encryptedMetadata",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_iterations",
+						"type": "uint256"
+					}
+				],
+				"name": "stressTestStoreDocument",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CivilMetaDataStressTest.sol": "CivilMetadataStorage"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CivilMetaDataStressTest.sol": {
+			"keccak256": "0x9180f18dd6c7c673c3ff44d3c00be7728c5b513ce84f27bdcb2ec9ccf41a045a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e2356a083b792a659e11586fe8953817d47e4481af12ae97fb9d38835d3f4774",
+				"dweb:/ipfs/Qmf3usRCPL6Jq3sR4TJjW6rmhGHzw4h8UrjJqTigvw8G1T"
+			]
+		}
+	},
+	"version": 1
+}
